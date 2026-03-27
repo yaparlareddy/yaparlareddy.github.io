@@ -2,7 +2,6 @@
 
 This repository contains:
 1.  **Personal Page**: A portfolio website located in the `docs/` folder.
-2.  **Todo List App**: A Python-based todo application located in the `todo/` folder.
 
 ## How to Host the Personal Page on GitHub
 
@@ -24,11 +23,4 @@ This repository contains:
 
 Your site will be live at `https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/`.
 
-## Todo List App
-
-The todo list application is in the `todo/` directory.
-To run it:
-```bash
-cd todo
-python main.py
 ```
