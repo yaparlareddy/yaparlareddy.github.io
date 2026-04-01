@@ -3,127 +3,453 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Senior DevOps Engineer Portfolio</title>
+    <meta name="description" content="Subasantosh Yaparala – DevOps Engineer with 10+ years in cloud infrastructure, Kubernetes, Terraform, CI/CD, and observability across AWS, GCP, and Azure.">
+    <title>Subasantosh Yaparala | DevOps Engineer</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+
+    <!-- NAV -->
     <header>
         <nav>
-            <div class="logo">DevOps<span class="highlight">Pro</span></div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
+            <div class="logo">Subasantosh<span class="highlight">.</span></div>
+            <ul class="nav-links" id="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#what-i-do">What I Do</a></li>
+                <li><a href="#stack">Stack</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#impact">Impact</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
         </nav>
     </header>
 
+    <!-- 00 · HERO -->
     <section id="home" class="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-glow"></div>
         <div class="hero-content">
-            <h1>Senior <span class="highlight">DevOps Engineer</span></h1>
-            <p>AWS | GCP | Azure | Kubernetes | GitOps</p>
-            <a href="#projects" class="btn">View My Work</a>
+            <p class="hero-greeting">Hi, I'm</p>
+            <h1>Subasantosh <span class="highlight">Yaparala</span></h1>
+            <p class="hero-role">
+                I'm a&nbsp;<span id="typewriter"></span><span class="cursor">|</span>
+            </p>
+            <p class="hero-sub">Building reliable, scalable cloud infrastructure that lets teams ship faster.</p>
+            <div class="hero-cta">
+                <a href="#what-i-do" class="btn">See My Work</a>
+                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+            </div>
+        </div>
+        <div class="hero-scroll-hint">
+            <span>scroll</span>
+            <i class="fas fa-chevron-down"></i>
         </div>
     </section>
 
-    <section id="about" class="container">
-        <h2>About Me</h2>
-        <div class="about-content">
-            <p>I am a Senior DevOps Engineer with extensive experience in designing, deploying, and managing scalable infrastructure across multi-cloud environments (<strong>GCP, AWS, Azure</strong>). I specialize in automating workflows, orchestrating containers with <strong>Kubernetes</strong>, and implementing <strong>GitOps</strong> practices.</p>
-        </div>
-    </section>
-
-    <section id="skills" class="container">
-        <h2>Technical Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-category">
-                <h3><i class="fas fa-cloud"></i> Cloud Platforms</h3>
-                <div class="skill-tags">
-                    <span class="tag">AWS</span>
-                    <span class="tag">Google Cloud (GCP)</span>
-                    <span class="tag">Microsoft Azure</span>
-                </div>
+    <!-- 01 · ABOUT -->
+    <section id="about" class="section container">
+        <p class="section-label">01 &mdash; About</p>
+        <h2 class="section-title">A bit about me</h2>
+        <div class="about-layout">
+            <div class="about-bio">
+                <p>DevOps Engineer with <strong>10+ years</strong> building cloud infrastructure at scale across AWS, GCP, and Azure. I turn complex operational challenges into automated, observable, and resilient systems.</p>
+                <p>Currently at <strong class="highlight">O9Solutions</strong>, where I manage 300+ Kubernetes clusters, drive SOC 2 compliance, and mentor teams on platform engineering best practices.</p>
             </div>
-            <div class="skill-category">
-                <h3><i class="fab fa-docker"></i> Containers & Orchestration</h3>
-                <div class="skill-tags">
-                    <span class="tag">Docker</span>
-                    <span class="tag">Kubernetes</span>
-                    <span class="tag">Helm</span>
-                    <span class="tag">ECS</span>
+            <div class="stat-cards">
+                <div class="stat-card">
+                    <span class="stat-number">10<span class="stat-plus">+</span></span>
+                    <span class="stat-label">Years Engineering</span>
                 </div>
-            </div>
-            <div class="skill-category">
-                <h3><i class="fas fa-code-branch"></i> CI/CD & GitOps</h3>
-                <div class="skill-tags">
-                    <span class="tag">Git</span>
-                    <span class="tag">Jenkins</span>
-                    <span class="tag">ArgoCD</span>
-                    <span class="tag">GitHub Actions</span>
-                    <span class="tag">GitOps</span>
-                    <span class="tag">Teamcity</span>
-
+                <div class="stat-card">
+                    <span class="stat-number">300<span class="stat-plus">+</span></span>
+                    <span class="stat-label">K8s Clusters Managed</span>
                 </div>
-            </div>
-            <div class="skill-category">
-                <h3><i class="fas fa-server"></i> IaC & Config Mgmt</h3>
-                <div class="skill-tags">
-                    <span class="tag">Terraform</span>
-                    <span class="tag">Ansible</span>
+                <div class="stat-card">
+                    <span class="stat-number">99.9<span class="stat-plus">%</span></span>
+                    <span class="stat-label">Uptime Delivered</span>
                 </div>
-            </div>
-            <div class="skill-category">
-                <h3><i class="fas fa-terminal"></i> Scripting</h3>
-                <div class="skill-tags">
-                    <span class="tag">Python</span>
-                    <span class="tag">Bash</span>
-                </div>
-            </div>
-            <div class="skill-category">
-                <h3><i class="fas fa-chart-line"></i> Observability</h3>
-                <div class="skill-tags">
-                    <span class="tag">ELK Stack</span>
-                    <span class="tag">Prometheus</span>
-                    <span class="tag">Grafana</span>
+                <div class="stat-card">
+                    <span class="stat-number">40<span class="stat-plus">%</span></span>
+                    <span class="stat-label">Faster Provisioning</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="container">
-        <h2>Featured Projects</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <h3>Multi-Cloud K8s Cluster</h3>
-                <p>Provisioned and managed Kubernetes clusters across AWS EKS and GCP GKE using Terraform.</p>
-                <a href="#" class="project-link">View Details</a>
-            </div>
-            <div class="project-card">
-                <h3>GitOps with ArgoCD</h3>
-                <p>Implemented a full GitOps workflow for automated application deployment and configuration management.</p>
-                <a href="#" class="project-link">View Details</a>
-            </div>
-            <div class="project-card">
-                <h3>Centralized Logging</h3>
-                <p>Deployed a scalable ELK stack with Prometheus for real-time monitoring and log aggregation.</p>
-                <a href="#" class="project-link">View Details</a>
+    <!-- 02 · WHAT I DO -->
+    <section id="what-i-do" class="section section-dark">
+        <div class="container">
+            <p class="section-label">02 &mdash; Specializations</p>
+            <h2 class="section-title">What I Do</h2>
+            <div class="specialty-grid">
+
+                <div class="specialty-card">
+                    <div class="specialty-icon"><i class="fas fa-cloud"></i></div>
+                    <h3>Cloud Infrastructure</h3>
+                    <p>Designing and operating multi-cloud environments with infrastructure-as-code, cost optimization, and enterprise-grade security compliance.</p>
+                    <div class="specialty-pills">
+                        <span class="pill">AWS</span>
+                        <span class="pill">GCP</span>
+                        <span class="pill">Azure</span>
+                        <span class="pill">Terraform</span>
+                    </div>
+                </div>
+
+                <div class="specialty-card">
+                    <div class="specialty-icon"><i class="fab fa-docker"></i></div>
+                    <h3>Container Orchestration</h3>
+                    <p>Building and scaling containerized workloads from development to production across hundreds of clusters with Helm-based release management.</p>
+                    <div class="specialty-pills">
+                        <span class="pill">Docker</span>
+                        <span class="pill">Kubernetes</span>
+                        <span class="pill">Helm</span>
+                        <span class="pill">ECS</span>
+                    </div>
+                </div>
+
+                <div class="specialty-card">
+                    <div class="specialty-icon"><i class="fas fa-infinity"></i></div>
+                    <h3>CI/CD &amp; Automation</h3>
+                    <p>Implementing GitOps workflows and automated pipelines that cut deployment friction, increase release cadence, and keep environments in sync.</p>
+                    <div class="specialty-pills">
+                        <span class="pill">Jenkins</span>
+                        <span class="pill">ArgoCD</span>
+                        <span class="pill">GitHub Actions</span>
+                        <span class="pill">GitOps</span>
+                    </div>
+                </div>
+
+                <div class="specialty-card">
+                    <div class="specialty-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Observability &amp; Security</h3>
+                    <p>End-to-end visibility across distributed systems with structured logging, distributed tracing, and privileged access controls for SOC 2 readiness.</p>
+                    <div class="specialty-pills">
+                        <span class="pill">ELK</span>
+                        <span class="pill">Prometheus</span>
+                        <span class="pill">OpenTelemetry</span>
+                        <span class="pill">CyberArk</span>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <section id="contact" class="container">
-        <h2>Get In Touch</h2>
-        <div class="social-links">
-            <a href="https://github.com/yaparlareddy" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/santosh-reddy-a8774612a/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <!-- 03 · TECH STACK -->
+    <section id="stack" class="section container">
+        <p class="section-label">03 &mdash; Technologies</p>
+        <h2 class="section-title">Tech Stack</h2>
+        <div class="stack-groups">
+
+            <div class="stack-group">
+                <p class="stack-group-label">Cloud</p>
+                <div class="stack-pills">
+                    <span class="stack-pill">AWS</span>
+                    <span class="stack-pill">Google Cloud</span>
+                    <span class="stack-pill">Azure</span>
+                </div>
+            </div>
+
+            <div class="stack-group">
+                <p class="stack-group-label">Containers &amp; Orchestration</p>
+                <div class="stack-pills">
+                    <span class="stack-pill">Docker</span>
+                    <span class="stack-pill">Kubernetes</span>
+                    <span class="stack-pill">Helm</span>
+                    <span class="stack-pill">ECS</span>
+                </div>
+            </div>
+
+            <div class="stack-group">
+                <p class="stack-group-label">IaC &amp; Config</p>
+                <div class="stack-pills">
+                    <span class="stack-pill">Terraform</span>
+                    <span class="stack-pill">Ansible</span>
+                </div>
+            </div>
+
+            <div class="stack-group">
+                <p class="stack-group-label">CI/CD</p>
+                <div class="stack-pills">
+                    <span class="stack-pill">Jenkins</span>
+                    <span class="stack-pill">ArgoCD</span>
+                    <span class="stack-pill">GitHub Actions</span>
+                    <span class="stack-pill">TeamCity</span>
+                    <span class="stack-pill">GitOps</span>
+                </div>
+            </div>
+
+            <div class="stack-group">
+                <p class="stack-group-label">Observability</p>
+                <div class="stack-pills">
+                    <span class="stack-pill">ELK Stack</span>
+                    <span class="stack-pill">Prometheus</span>
+                    <span class="stack-pill">Grafana</span>
+                    <span class="stack-pill">OpenTelemetry</span>
+                </div>
+            </div>
+
+            <div class="stack-group">
+                <p class="stack-group-label">Scripting &amp; Data</p>
+                <div class="stack-pills">
+                    <span class="stack-pill">Python</span>
+                    <span class="stack-pill">Bash</span>
+                    <span class="stack-pill">Redis</span>
+                    <span class="stack-pill">MongoDB</span>
+                    <span class="stack-pill">Elasticsearch</span>
+                </div>
+            </div>
+
+            <div class="stack-group">
+                <p class="stack-group-label">Security</p>
+                <div class="stack-pills">
+                    <span class="stack-pill">CyberArk</span>
+                    <span class="stack-pill">SOC 2</span>
+                    <span class="stack-pill">SecOps</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 04 · EXPERIENCE -->
+    <section id="experience" class="section section-dark">
+        <div class="container">
+            <p class="section-label">04 &mdash; Career</p>
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline-slim">
+
+                <div class="tl-item">
+                    <div class="tl-dot"></div>
+                    <div class="tl-body">
+                        <div class="tl-meta">
+                            <div>
+                                <h3 class="tl-role">Senior DevOps Engineer</h3>
+                                <p class="tl-company">O9Solutions &mdash; Bengaluru</p>
+                            </div>
+                            <span class="tl-date">May 2021 &ndash; Present</span>
+                        </div>
+                        <p class="tl-achievement">Managed 300+ Kubernetes clusters across AWS, Azure &amp; GCP with Terraform IaC, cutting provisioning time by 40% and reducing MTTR by 30% through automated incident response and OpenTelemetry observability.</p>
+                    </div>
+                </div>
+
+                <div class="tl-item">
+                    <div class="tl-dot"></div>
+                    <div class="tl-body">
+                        <div class="tl-meta">
+                            <div>
+                                <h3 class="tl-role">Senior DevOps Engineer</h3>
+                                <p class="tl-company">Xperi &mdash; Bengaluru</p>
+                            </div>
+                            <span class="tl-date">Nov 2016 &ndash; May 2021</span>
+                        </div>
+                        <p class="tl-achievement">Drove 50% reduction in deployment time by containerizing workloads with Docker and automating CI/CD pipelines via Jenkins and TeamCity, while optimizing cloud costs by 30%.</p>
+                    </div>
+                </div>
+
+                <div class="tl-item">
+                    <div class="tl-dot"></div>
+                    <div class="tl-body">
+                        <div class="tl-meta">
+                            <div>
+                                <h3 class="tl-role">Development Engineer</h3>
+                                <p class="tl-company">Pramathi Technologies &mdash; Bengaluru</p>
+                            </div>
+                            <span class="tl-date">Feb 2016 &ndash; Jul 2016</span>
+                        </div>
+                        <p class="tl-achievement">Introduced Docker-based deployments and custom Jenkins pipelines, improving build consistency and reducing manual release effort across pre-production environments.</p>
+                    </div>
+                </div>
+
+                <div class="tl-item">
+                    <div class="tl-dot"></div>
+                    <div class="tl-body">
+                        <div class="tl-meta">
+                            <div>
+                                <h3 class="tl-role">System Administrator</h3>
+                                <p class="tl-company">CoreTree Solutions &mdash; Bengaluru</p>
+                            </div>
+                            <span class="tl-date">Aug 2014 &ndash; Jun 2015</span>
+                        </div>
+                        <p class="tl-achievement">Provisioned and automated AWS and on-premise server environments with custom scripts, reducing manual intervention and improving platform scalability.</p>
+                    </div>
+                </div>
+
+                <div class="tl-item tl-edu">
+                    <div class="tl-dot tl-dot-edu"></div>
+                    <div class="tl-body">
+                        <div class="tl-meta">
+                            <div>
+                                <h3 class="tl-role"><i class="fas fa-graduation-cap"></i> Bachelor of Technology</h3>
+                                <p class="tl-company">JNTU Hyderabad</p>
+                            </div>
+                            <span class="tl-date">Jul 2013</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 05 · IMPACT -->
+    <section id="impact" class="section impact-section">
+        <div class="impact-bg"></div>
+        <div class="container">
+            <p class="section-label section-label-center">05 &mdash; Results</p>
+            <h2 class="section-title section-title-center">Impact by the Numbers</h2>
+            <div class="impact-grid">
+
+                <div class="impact-card">
+                    <div class="impact-num-row">
+                        <span class="impact-number" data-target="30">0</span><span class="impact-unit">%</span>
+                    </div>
+                    <p class="impact-label">MTTR Reduction</p>
+                    <p class="impact-desc">Automated incident response workflows at O9Solutions</p>
+                </div>
+
+                <div class="impact-card">
+                    <div class="impact-num-row">
+                        <span class="impact-number" data-target="50">0</span><span class="impact-unit">%</span>
+                    </div>
+                    <p class="impact-label">Deployment Frequency</p>
+                    <p class="impact-desc">CI/CD pipeline automation cutting release cycle in half</p>
+                </div>
+
+                <div class="impact-card">
+                    <div class="impact-num-row">
+                        <span class="impact-number" data-target="995" data-display="99.5%">0</span>
+                    </div>
+                    <p class="impact-label">System Uptime</p>
+                    <p class="impact-desc">Consistent availability across multi-cloud deployments</p>
+                </div>
+
+                <div class="impact-card">
+                    <div class="impact-num-row">
+                        <span class="impact-number" data-target="40">0</span><span class="impact-unit">%</span>
+                    </div>
+                    <p class="impact-label">Faster Provisioning</p>
+                    <p class="impact-desc">Terraform IaC across AWS, Azure &amp; GCP</p>
+                </div>
+
+                <div class="impact-card">
+                    <div class="impact-num-row">
+                        <span class="impact-number" data-target="45">0</span><span class="impact-unit">%</span>
+                    </div>
+                    <p class="impact-label">Incident Resolution</p>
+                    <p class="impact-desc">ELK Stack observability accelerating root-cause analysis</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 06 · CONTACT -->
+    <section id="contact" class="section container">
+        <p class="section-label section-label-center">06 &mdash; Contact</p>
+        <h2 class="section-title section-title-center">Get In Touch</h2>
+        <p class="contact-sub">Open to platform engineering and DevOps opportunities. Let's build something reliable.</p>
+        <div class="contact-cards">
+
+            <a href="https://www.linkedin.com/in/santosh-reddy-a8774612a/" target="_blank" rel="noopener" class="contact-card">
+                <div class="contact-card-icon linkedin-icon"><i class="fab fa-linkedin-in"></i></div>
+                <div class="contact-card-text">
+                    <p class="contact-card-label">Connect on</p>
+                    <p class="contact-card-name">LinkedIn</p>
+                </div>
+                <i class="fas fa-arrow-right contact-card-arrow"></i>
+            </a>
+
+            <a href="https://github.com/yaparlareddy" target="_blank" rel="noopener" class="contact-card">
+                <div class="contact-card-icon github-icon"><i class="fab fa-github"></i></div>
+                <div class="contact-card-text">
+                    <p class="contact-card-label">Browse code on</p>
+                    <p class="contact-card-name">GitHub</p>
+                </div>
+                <i class="fas fa-arrow-right contact-card-arrow"></i>
+            </a>
+
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2026 Senior DevOps Engineer Portfolio.</p>
+        <p>Designed &amp; built by <span class="highlight">Subasantosh Yaparala</span> &mdash; &copy; 2026</p>
     </footer>
+
+    <script>
+    // Hamburger
+    const hamburger = document.getElementById('hamburger');
+    const navLinks  = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+        hamburger.classList.toggle('active');
+    });
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('open');
+            hamburger.classList.remove('active');
+        });
+    });
+
+    // Typewriter
+    const roles      = ['DevOps Engineer', 'Cloud Architect', 'Automation Specialist'];
+    const twTarget   = document.getElementById('typewriter');
+    let roleIndex = 0, charIndex = 0, deleting = false;
+    function type() {
+        const current = roles[roleIndex];
+        if (!deleting) {
+            twTarget.textContent = current.slice(0, ++charIndex);
+            if (charIndex === current.length) { deleting = true; setTimeout(type, 1800); return; }
+        } else {
+            twTarget.textContent = current.slice(0, --charIndex);
+            if (charIndex === 0) { deleting = false; roleIndex = (roleIndex + 1) % roles.length; }
+        }
+        setTimeout(type, deleting ? 55 : 90);
+    }
+    type();
+
+    // Animated counters
+    const counters = document.querySelectorAll('.impact-number');
+    const obs = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting || entry.target.dataset.done) return;
+            entry.target.dataset.done = '1';
+            const el      = entry.target;
+            const end     = +el.dataset.target;
+            const display = el.dataset.display || null;
+            const unit    = el.nextElementSibling;
+            const duration = 1600;
+            const steps   = 60;
+            const stepVal = end / steps;
+            let current   = 0;
+            let count     = 0;
+            const timer   = setInterval(() => {
+                count++;
+                current = Math.min(Math.round(stepVal * count), end);
+                if (display) {
+                    el.textContent = display;
+                } else {
+                    el.textContent = current;
+                    if (unit) unit.style.opacity = '1';
+                }
+                if (count >= steps) clearInterval(timer);
+            }, duration / steps);
+        });
+    }, { threshold: 0.5 });
+    counters.forEach(c => obs.observe(c));
+
+    // Active nav
+    const sections = document.querySelectorAll('section[id]');
+    const navAs    = document.querySelectorAll('.nav-links a');
+    window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(s => { if (window.scrollY >= s.offsetTop - 100) current = s.id; });
+        navAs.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + current));
+    }, { passive: true });
+    </script>
 </body>
 </html>
