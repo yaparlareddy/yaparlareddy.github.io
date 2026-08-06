@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+    <defs>
+        <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#0E0E0F"/>
+            <stop offset="1" stop-color="#161618"/>
+        </linearGradient>
+    </defs>
+    <rect width="1200" height="630" fill="url(#bg)"/>
+    <g stroke="#7B6EF6" stroke-opacity="0.14" stroke-width="2">
+        <line x1="0" y1="120" x2="1200" y2="120"/>
+        <line x1="0" y1="240" x2="1200" y2="240"/>
+        <line x1="0" y1="360" x2="1200" y2="360"/>
+        <line x1="0" y1="480" x2="1200" y2="480"/>
+    </g>
+    <rect x="80" y="80" width="1040" height="470" rx="24" fill="#161618" fill-opacity="0.7" stroke="#7B6EF6" stroke-width="2"/>
+    <text x="120" y="190" font-family="Courier New, monospace" font-size="28" letter-spacing="8" fill="#A89DF8">DEVOPS ENGINEER</text>
+    <text x="116" y="290" font-family="Segoe UI, system-ui, sans-serif" font-size="72" font-weight="700" fill="#F0EFE9">Subasantosh Yaparala</text>
+    <text x="120" y="360" font-family="Segoe UI, system-ui, sans-serif" font-size="34" fill="#7B6EF6">Automate everything · Observe everything · Ship everywhere</text>
+    <text x="120" y="430" font-family="Segoe UI, system-ui, sans-serif" font-size="26" fill="#7A7972">10+ years · 300+ Kubernetes clusters · AWS, GCP, Azure</text>
+    <path d="M920 210l40 30-40 30" stroke="#A89DF8" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M960 300h70" stroke="#F0EFE9" stroke-width="10" stroke-linecap="round"/>
+    <rect x="80" y="550" width="1040" height="2" fill="#2d3748" opacity="0.5"/>
+</svg>
